@@ -931,6 +931,12 @@ footer .nombre{
         width: 100%;
         grid-template-columns: 90%;
     }
+    .competencias{
+        height: 100%;
+    }
+    .intereses{
+        height: 100%;
+    }
     .competencias .resumen-competencia p{
         width: 100%;
     }
