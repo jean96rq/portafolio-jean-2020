@@ -1,0 +1,947 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    list-style: none;
+    text-decoration:none;
+}
+body{
+    background: #eff3f9;
+    overflow-x: hidden;
+}
+main{
+    margin-left: 50px;
+    overflow: hidden;
+}
+/* Estilos generales */
+/* Sidebar */
+.sidebar{
+ width: 50px;
+ 
+ height: 100vh;
+ position: fixed;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.sidebar ul li{
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    transition: all ease 400ms;
+   
+}
+
+.sidebar ul li ion-icon{
+    color: rgb(188,190,192);
+    transition: all ease 400ms;
+}
+.sidebar ul li:hover  ion-icon{
+    color:#454545;
+}
+/* Sidebar */
+/* Navbar*/
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+
+}
+nav span ion-icon {
+  height: 13px;
+  font-size: 16px;
+  color: black;
+}
+
+nav .contenedor-li{
+    position: relative;
+    cursor: pointer;
+   
+}
+nav .contenedor-li .dropodown{
+    position: absolute;
+    top:50px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    margin-left: 10px 20px;
+    transition: all ease 400ms;
+    display:none;  
+   
+}
+nav .contenedor-li .dropodown li a{
+    color: black;
+    transition: all ease 400ms;
+}
+nav .contenedor-li .dropodown li a:hover{
+    color:rgb(188,190,192);
+}
+
+#dropodown.dropodownActive{
+    display: block;
+    transition: all ease 400ms;
+}
+nav li{
+    margin-right: 20px;
+}
+/* Navbar*/
+/* Index */
+/* Banner home */
+.banner-home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+}
+.banner-home .banner-home-info{
+    width:40%;
+   
+    box-sizing: border-box;
+}
+.banner-home .banner-img{
+    width: 40%;
+    text-align: center;
+    
+}
+.banner-home .banner-img img{
+    width: 70%;
+}
+
+.banner-home .banner-home-info h2{
+    font-size: 3.4rem;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.banner-home .banner-home-info p{
+    color: rgb(188,195,195);
+    transition: all ease 300ms;
+}
+.banner-home .banner-home-info button{
+    border: none;
+    width: 150px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color:white;
+    background:#251943;
+    transition: all ease 400ms;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.banner-home .banner-home-info button:hover{
+   opacity: 0.7;
+}
+/* Banner home */
+/* enlace redes */
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 30vh;
+   
+}
+.social .contedenor-social{
+    width:300px;
+    display: flex;
+    padding: 60px 30px;
+    justify-content: center; 
+    text-align: center;
+}
+
+.social .contedenor-social .box-social{
+    width: 25%;
+    cursor: pointer;
+}
+
+.social .contedenor-social .box-social ion-icon{
+    font-size: 2rem;
+    color: rgb(188,190,192);
+    transition: all ease 400ms;
+}
+.social .contedenor-social .box-social ion-icon:hover{
+    font-size: 2rem;
+    color: #373B44;
+}
+/* enlace redes */
+/* Index */
+/* Banner General */
+.banner{
+    width: 100%;
+    height:40vh;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner .banner-info h2{
+    font-size: 3rem;
+    /* margin-bottom: 50px; */
+    color: #fff;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 1px;
+}
+.banner .banner-info .path a{
+    color: #fff;
+}
+.banner .banner-info .path span{
+    color: #fff;
+}
+.banner .banner-info .path a:last-child{
+    color: #75DAB4;
+}
+/* Banner General */
+/* Contacto */
+.contacto{
+    width: 100%;
+    height:60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: -50px;
+    overflow: hidden;
+}
+.contacto .contenedor-contacto{
+    width:70%;
+    border-radius: 4px;
+    transition: all ease 400ms;
+  
+    box-sizing: border-box;
+    display: flex;
+    background: #fff;
+    position: relative;
+}
+.contacto .contenedor-contacto .datos {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height:58vh;
+}
+.contacto .contenedor-contacto .datos h2{
+    font-size: 2.4rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: 'Hind', sans-serif;
+    color:#373B44;
+    text-transform: uppercase;
+}
+.contacto .contenedor-contacto .datos .dato{
+  margin-bottom: 10px;
+}
+.contacto .contenedor-contacto .datos .dato p{
+   font-weight: bold;
+   font-size: 18px;
+   margin-bottom: 10px;
+  }
+.contacto .contenedor-contacto .datos .dato a{
+    color: rgb(188,190,192);
+   }
+.contacto .contenedor-contacto .img-contacto{
+    width: 50%;
+    height:58vh;
+    background-image: url('../img/foto-contacto.jpg');
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/* Contacto */
+
+/* Descargar cv */
+.cv{
+    width: 100%;
+    height:60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: -50px;
+    overflow: hidden;
+}
+.cv .contenedor-cv{
+    width:70%;
+    border-radius: 4px;
+    transition: all ease 400ms;
+  
+    box-sizing: border-box;
+    display: flex;
+    background: #fff;
+    position: relative;
+}
+.cv .contenedor-cv .datos {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height:58vh;
+}
+.cv .contenedor-cv .datos h2{
+    font-size: 2.4rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: 'Hind', sans-serif;
+    color:#373B44;
+    text-transform: uppercase;
+}
+.cv .contenedor-cv .datos .dato{
+  margin-bottom: 10px;
+}
+.cv .contenedor-cv .datos .dato button{
+    border: none;
+    width: 150px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color:white;
+    background: #4B42DB;
+    transition: all ease 400ms;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  .cv .contenedor-cv .datos .dato button a{
+   
+    color:white;
+    
+  }
+  .cv .contenedor-cv .datos .dato button:hover{
+    opacity: 0.9;
+  }
+  .cv .contenedor-cv .datos .dato p{
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: rgb(104, 114, 129);
+   }
+  .cv .contenedor-cv .img-cv{
+    width: 50%;
+    height:58vh;
+    background-image: url('../img/foto-cv.jpg');
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/* Descargar cv */
+/* Sobre mí */
+.educación{
+    display: flex;
+    justify-content:flex-start;
+    height: 40vh;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 50px;
+    background: #fff;
+}
+.educación .titulo-educacion{
+    width: 80%;
+}
+.educación .titulo-educacion h4{
+    color: #373B44;
+   
+}
+.educación .titulo-educacion hr{
+    margin: 10px 0 30px 0;
+}
+.educación .info-educación{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    
+}
+.educación .info-educación .ie-educación{
+    width: 80%;  
+}
+.educación .info-educación .ie-educación .instituto{
+  letter-spacing: 1px;
+  color: #1f1f1f;
+}
+.educación .info-educación .ie-educación .carrera{
+    font-size: 15px;
+    color: #687281;
+    margin-bottom: 20px;
+  }
+.educación .info-educación .ie-educación .grado{
+    font-size: 14px;
+    color: #687281;
+    margin-bottom: 20px;
+  }
+.educación .info-educación .fe-educación{
+    width: 20%;
+    text-align: right;
+    
+}
+.educación .info-educación .fe-educación p{
+    font-size: 15px;
+    color: rgb(188,190,192);
+}
+.diagonal-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #eff3f9 transparent;
+}
+/* Conocimientos */
+
+.conocimientos{
+    display: flex;
+    justify-content:flex-start;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top:50px;
+    background: #eff3f9;
+    position: relative;
+}
+.conocimientos .diagonal-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.conocimientos .titulo-conociento{
+    width: 80%;
+}
+.conocimientos .titulo-conociento h4{
+    color: #373B44;
+   
+}
+.conocimientos .titulo-conociento hr{
+    margin: 10px 0 30px 0;
+}
+.conocimientos .barra-conocimiento{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conocimientos .barra-conocimiento .categorias{
+    display: flex;
+    transition: all ease 400ms;
+}
+.conocimientos .barra-conocimiento .categorias li.activo{
+   
+    color:#373B44;
+    border-bottom: solid 2px #00ac69;
+    
+}
+.conocimientos .barra-conocimiento .categorias li{ 
+    margin: 20px;
+    cursor: pointer;
+    
+}
+.conocimientos .modulo-conocimiento{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: relative;
+  
+}
+.conocimientos .modulo-conocimiento .contenedor-box-cono{
+    display: grid;
+    width: 80%;
+    justify-content: center;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    text-align: center;
+    transition: all ease 400ms;
+    position: relative;
+    
+}
+.conocimientos .modulo-conocimiento .contenedor-box-cono .box-cono{
+    background: #fff;
+    min-height: 250px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all ease 500ms;
+    border-radius: 5px;
+    border-top: 3px solid #00ac69;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(31, 45, 65, 0.15);
+    position: relative;
+}
+.conocimientos .modulo-conocimiento .contenedor-box-cono .box-cono ion-icon,i{
+  
+    padding: 20px;
+    background: #BFE5DC;
+    border-radius: 4px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: rgb(188,190,192);
+}
+.conocimientos .modulo-conocimiento .contenedor-box-cono .box-cono h3{
+  color: #373B44;
+}
+.conocimientos .modulo-conocimiento .contenedor-box-cono .box-cono:hover{
+    border-top: 3px solid yellow;
+    transform: translateY(-5px);
+}
+
+.conocimientos .modulo-conocimiento .contenedor-box-cono .box-cono p{
+    min-height: 60px;
+    color:#687281;
+    font-size: 15px;
+    margin-top: 5px;
+}
+#box-front{
+  
+    transform: scale(1);
+    transition: all ease 400ms;
+    /* display: none; */
+}
+#box-back{
+    transform: scale(1);
+    transition: all ease 400ms;
+    display: none;
+}
+#box-diseño{
+    transform: scale(1);
+    transition: all ease 400ms;
+    display: none;
+}
+.competencias{
+    display: flex;
+    justify-content:flex-start;
+    height: 60vh;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 100px;
+    background: #fff;
+}
+.competencias  .diagonal-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #eff3f9 transparent;
+}
+.competencias .titulo-competencia{
+    width: 80%;
+}
+.competencias .titulo-competencia h4{
+    color: #373B44;
+   
+}
+.competencias .titulo-competencia hr{
+    margin: 10px 0 30px 0;
+}
+.competencias .resumen-competencia{
+    width: 80%;
+    margin-bottom: 50px;
+
+}
+.competencias .resumen-competencia p{
+    width: 60%;
+    color: rgb(104, 114, 129);
+
+}
+.competencias .lista-competencia{
+    width: 80%;
+   
+}
+.competencias .lista-competencia li{
+   list-style: outside;
+   padding-left: 20px;
+   font-size: 15px;
+   letter-spacing: 1px;
+   color:#373B44;
+}
+.intereses{
+    display: flex;
+    justify-content:flex-start;
+    height: 60vh;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 50px;
+}
+.intereses  .diagonal-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.intereses .titulo-interes{
+    width: 80%;
+}
+.intereses .titulo-interes h4{
+    color: #373B44;
+   
+}
+.intereses .titulo-interes hr{
+    margin: 10px 0 30px 0;
+}
+.intereses .resumen-interes{
+    width: 80%;
+    margin-bottom: 50px;
+
+}
+.intereses .resumen-interes p{
+    width: 60%;
+    color: rgb(104, 114, 129);
+    margin-top: 20px;
+}
+/* Sobre mí */
+/* Proyectos */
+.proyectos{
+    display: flex;
+    justify-content:flex-start;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top:50px;
+    position: relative;
+}
+.proyectos  .diagonal-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.proyectos .titulo-proyecto{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.proyectos .titulo-proyecto h2{
+    color: #373B44;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.proyectos .parrafo-proyecto{
+    width: 80%;
+    text-align: center;
+    color: rgb(104, 114, 129);
+    margin-bottom: 30px;
+}
+.proyectos .barra-proyectos{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proyectos .barra-proyectos .categorias{
+    display: flex;
+    transition: all ease 400ms;
+}
+.proyectos .barra-proyectos .categorias li.activo{
+   
+    color:#373B44;
+    border-bottom: solid 2px #00ac69;
+    
+}
+.proyectos .barra-proyectos .categorias li{ 
+    margin: 20px;
+    cursor: pointer; 
+}
+
+.proyectos .modulo-proyectos{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: relative;
+  
+}
+.proyectos .modulo-proyectos .contenedor-box-proyecto{
+    display: grid;
+    width: 80%;
+    justify-content: center;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    text-align: center;
+    transition: all ease 400ms;
+    position: relative;
+    margin: 10px;
+    
+}
+.proyectos .modulo-proyectos .contenedor-box-proyecto .box-proyecto{
+    margin: 15px;
+    transition: all ease 500ms;
+}
+.proyectos .modulo-proyectos .contenedor-box-proyecto img{
+    width: 100%;
+    border-radius: 5px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(31, 45, 65, 0.15);
+}
+.proyectos .modulo-proyectos .contenedor-box-proyecto .box-proyecto:hover{
+    transform: translateY(-5px);
+    opacity: 0.8;
+}
+.proyectos .modulo-proyectos .contenedor-box-proyecto h3{
+   text-align: left;
+   font-size: 18px;
+   letter-spacing: 1px;
+   color: #373B44;
+}
+.proyectos .modulo-proyectos .contenedor-box-proyecto p{
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: rgb(188,190,192);
+ }
+#box-todo{
+    transform: scale(1);
+    transition: all ease 400ms;
+    /* display: none; */
+}
+#box-pro-back{
+    transform: scale(1);
+    transition: all ease 400ms;
+    display: none;
+}
+#box-pro-front{
+    transform: scale(1);
+    transition: all ease 400ms;
+    display: none;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80vh;
+    align-items: center;
+    background: #fff;
+}
+
+.contenedor-footer{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  
+}
+.contenedor-footer table th,td{
+  
+  text-align: left;
+}
+.contenedor-footer table ion-icon{
+  
+  padding-top: 10px;
+  font-size: 20px;
+  }
+.contenedor-footer table th{
+  
+    padding-bottom: 20px;
+    color: #373B44;
+    text-transform: uppercase;
+  }
+  .contenedor-footer table td a{
+  
+   color: rgb(188,190,192);
+   font-size: 14px;
+   padding: 10px 0;
+   transition: all ease 400ms;
+  }
+  .contenedor-footer table td a:hover{
+   text-decoration: underline;
+   color: #373B44;
+
+   }
+footer .copy{
+    width: 80%;
+    font-size: 13px;
+    color:#687281;
+}
+footer .copy hr{
+   margin-bottom: 20px;
+}
+footer .subtitulo{
+    color: rgb(188,195,195);
+    font-weight: 600;
+    font-size:19px;
+    
+}
+footer .nombre{
+    color: rgb(188,195,195);
+    font-weight: 800;
+    font-size:16px;
+    letter-spacing: 1px;
+    
+}
+
+
+
+/* Proyectos */
+
+/* Mediaquerys 890px */
+@media only screen and (max-width:890px) {
+    .sidebar{
+        width: 100%;
+        box-shadow: 0 5px 30px rgba(0,0,0,.30);
+        height: 50px;
+        position: fixed;
+        display:inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        bottom: 0;
+        background: #fff;
+        z-index: 999999;
+       }
+    .sidebar ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .sidebar ul li{
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    main{
+        margin-left: 0;
+    }
+    .banner-home .banner-home-info{
+       
+     width: 90%;
+      
+    }
+    .banner-home .banner-home-info h2{
+       
+        font-size: 2rem;
+      
+    }
+    .banner-img{
+       display: none;
+    
+    }
+    .contacto .contenedor-contacto{
+        width:90%;
+        border-radius: 4px;
+        transition: all ease 400ms;
+      
+        box-sizing: border-box;
+        display: flex;
+        background: #fff;
+        position: relative;
+    }
+    .contacto .contenedor-contacto .datos {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contacto .contenedor-contacto .datos h2{
+        font-size: 2rem;
+        
+    }
+    .contacto .contenedor-contacto .img-contacto{
+        display: none;
+    }
+    .cv .contenedor-cv{
+        width:90%;
+        border-radius: 4px;
+        transition: all ease 400ms;
+      
+        box-sizing: border-box;
+        display: flex;
+        background: #fff;
+        position: relative;
+    }
+    .cv .contenedor-cv .datos {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cv .contenedor-cv .datos h2{
+        font-size: 2rem;
+        
+    }
+    .cv .contenedor-cv .img-cv{
+        display: none;
+    }
+
+
+    .educación .info-educación{
+        flex-direction: column;
+        
+    }
+    .educación .info-educación .ie-educación{
+        width: 100%;  
+    }
+    .educación .info-educación .fe-educación{
+        width: 100%;
+        text-align: left;
+        
+    }
+    .conocimientos .modulo-conocimiento .contenedor-box-cono{
+        width: 100%;
+        grid-template-columns: 90%;
+    }
+    .proyectos .modulo-proyectos .contenedor-box-proyecto{
+        width: 100%;
+        grid-template-columns: 90%;
+    }
+    .competencias .resumen-competencia p{
+        width: 100%;
+    }
+    footer{
+        height: 100%;
+    }
+    .contenedor-footer{
+       
+        width: 90%;
+        display: grid;
+        
+        grid-template-columns: 100%;
+      
+    }
+    
+  } 

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio-Jean</title>
+    <!-- Estilos css -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/prueba.css">
+</head>
+
+<body>
+    <nav>
+        <li class="contenedor-li">
+            <a class="btn-dropdown">Jean Franco Rojas <span>
+                    <ion-icon class="arrow" name="chevron-down-outline"></ion-icon>
+                </span></a>
+            <div class="dropodown animate__animated animate__fadeIn " id="dropodown">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobreMi.html">Sobre mí</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="cv.html">Descargar cv</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </li>
+    </nav>
+
+    <div class="sidebar">
+        <ul>
+            <li class="link"><a href="index.html">
+                    <ion-icon href="" size="large" name="home-outline"></ion-icon>
+                </a></li>
+            <li class="link"><a href="sobreMi.html">
+                    <ion-icon size="large" name="happy-outline"></ion-icon>
+                </a></li>
+            <li class="link"><a href="proyectos.html">
+                    <ion-icon size="large" name="code-slash-outline"></ion-icon>
+                </a></li>
+            <li class="link"><a href="cv.html">
+                    <ion-icon size="large" name="document-text-outline"></ion-icon>
+                </a></li>
+            <li class="link"><a href="contacto.html">
+                    <ion-icon size="large" name="mail-open-outline"></ion-icon>
+                </a></li>
+        </ul>
+    </div>
+
+    <main class="animate__animated animate__fadeIn">
+        <section class="banner">
+            <div class="banner-info">
+                <h2>Sobre Mí</h2>
+                <div class="path">
+                    <a href="#">Home</a>
+                    <span> / </span>
+                    <a href="#">Sobre mí</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="educación">
+            <div class="titulo-educacion">
+                <h4>Educación</h4>
+                <hr>
+            </div>
+            <div class="info-educación">
+                <div class="ie-educación animate__animated animate__fadeInRight">
+                    <h3 class="instituto">Instituto San Ignacio de Loyola(ISIL)</h3>
+                    <p class="carrera">Ingeniería de sistemas</p>
+                    <p class="grado">Técnico egresado en la carrera de ingeniería de sistemas</p>
+                </div>
+                <div class="fe-educación animate__animated animate__fadeInLeft">
+                    <p>Julio 2017 - Julio 2020</p>
+                </div>
+            </div>
+            <div class="diagonal-abajo"></div>
+        </section>
+        <section class="conocimientos">
+            <div class="titulo-conociento">
+                <h4>Conocimientos</h4>
+                <hr>
+            </div>
+            <div class="barra-conocimiento">
+                <div class="categorias">
+                    <li id="btn-front" class="activo link-cono">Front-end</li>
+                    <li id="btn-back" class="link-cono">Back-end</li>
+                    <li id="btn-diseño" class="link-cono">Diseño</li>
+                </div>
+            </div>
+            <div class="modulo-conocimiento">
+                <!-- FronEnd -->
+                <div id="box-front" class="contenedor-box-cono fe-educación animate__animated animate__fadeIn ">
+                    <div class="box-cono">
+                        <ion-icon name="logo-html5"></ion-icon>
+                        <h3>HTML5</h3>
+                        <p>HTML5, etiquetas, PWA.</p>
+                    </div>
+                    <div class="box-cono">
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <h3>CSS3</h3>
+                        <p>Flex box, pseudoelementos, box model, css grid.</p>
+                    </div>
+                    <div class="box-cono">
+                        <ion-icon name="logo-javascript"></ion-icon>
+                        <h3>Javascript y Jquery</h3>
+                        <p>Condiciones, DOM, events, POO, SPA.</p>
+                    </div>
+                    <div class="box-cono">
+                        <i class="fab fa-bootstrap"></i>
+                        <h3>Bootstrap</h3>
+                        <p>Manejo de etiquetas, creación de landing page.</p>
+                    </div>
+                    <div class="box-cono">
+                        <ion-icon name="logo-vue"></ion-icon>
+                        <h3>Vue.js</h3>
+                        <p>Desarrollo SPA y Server-Rendering</p>
+                    </div>
+                    <div class="box-cono">
+                        <i class="fab fa-git"></i>
+                        <h3>Git</h3>
+                        <p>Ramas remotes, ramas locales, trabajo colaborativo.</p>
+                    </div>
+                    <div class="box-cono">
+                        <i class="fab fa-gulp"></i>
+                        <h3>Gulp</h3>
+                        <p>Automatizar tareas, optimizar imagenes, tareas por defecto.</p>
+                    </div>
+                    <div class="box-cono">
+                        <ion-icon name="logo-npm"></ion-icon>
+                        <h3>Npm</h3>
+                        <p>Gestionar paquetes y administración de modulos</p>
+                    </div>
+                </div>
+                <!-- FronEnd -->
+
+                <!-- BackEnd -->
+                <div id="box-back" class="contenedor-box-cono animate__animated animate__fadeIn ">
+                    <div class="box-cono">
+                        <ion-icon name="logo-nodejs"></ion-icon>
+                        <h3>Node js</h3>
+                        <p>Tareas en el navegador, Conexión con servidor y programación asíncrona.</p>
+                    </div>
+                    <div class="box-cono">
+                        <i class="fas fa-database"></i>
+                        <h3>SQL Server</h3>
+                        <p>Creación, mantenimiento de base de datos y consultas </p>
+                    </div>
+                    <div class="box-cono">
+                        <i class="fas fa-database"></i>
+                        <h3>MySql</h3>
+                        <p>Creación, mantenimiento de base de datos y consultas </p>
+                    </div>
+                    <div class="box-cono">
+                        <i class="fas fa-database"></i>
+                        <h3>Mongodb</h3>
+                        <p>Creación, mantenimiento de base de datos y consultas </p>
+                    </div>
+                </div>
+                <!-- BackEnd -->
+                <!-- Diseño -->
+                <div id="box-diseño" class="contenedor-box-cono animate__animated animate__fadeIn ">
+                    <div class="box-cono">
+                        <i class="fab fa-adobe"></i>
+                        <h3>Photoshop</h3>
+                        <p>Basico</p>
+                    </div>
+                    <div class="box-cono">
+                        <i class="fab fa-adobe"></i>
+                        <h3>Ilustrator</h3>
+                        <p>Creación de vectores</p>
+                    </div>
+                </div>
+                <!-- Diseño -->
+            </div>
+            <div class="diagonal-abajo"></div>
+        </section>
+        <section class="competencias">
+            <div class="titulo-competencia">
+                <h4>Competencias</h4>
+                <hr>
+            </div>
+            <div class="resumen-competencia">
+                <p>Gracias a las experiencias laborando en estos años, he adquirido y fortalecido mis habilidades con muchas ganas, para así tomar las mejores decisiones en cada tarea o proyecto que me encarguen y generar un valor agregado al equipo de trabajo</p>
+            </div>
+            <div class="lista-competencia">
+                <li>Trabajo en equipo</li>
+                <li>Adaptación al cambio</li>
+                <li>Resolución de conflictos</li>
+                <li>Orientación al servicio</li>
+                <li>Aprendizaje activo</li>
+            </div>
+            <div class="diagonal-abajo"></div>
+        </section>
+        <section class="intereses">
+            <div class="titulo-interes">
+                <h4>Intereses</h4>
+                <hr>
+            </div>
+            <div class="resumen-interes">
+                <p>Además de desarrollarme cómo programador web, disfruto de mi tiempo libre corriendo en las mañanas y caminar mientras escucho música. Además, me gusta ir al cine y ver distintos géneros de películas, entre mis favoritas las de ciencia ficción. 
+                    
+                </p>
+                <p>Por otro lado, cuando me encuentro dentro de casa, juego algunos videojuegos. También, me interesa informarme y explorar acerca de los últimos avances tecnológicos y aprender cosas nuevas por medio de videos tutoriales acerca de todo sobre el mundo de la programación.</p>
+            </div>
+            <div class="diagonal-abajo"></div>
+        </section>
+        <footer>
+            <div class="contenedor-footer">
+                <table>
+                    <tr>
+                        <th class="nombre">Jean Rojas</th>  
+                    </tr>
+                    <tr>
+                        <td class="subtitulo">Redes sociales</td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <a target="_blank" href="https://www.facebook.com/jeanfranco.rojasquiroz.3"><ion-icon name="logo-facebook"></ion-icon></a>
+                          <a target="_blank" href="https://www.linkedin.com/in/jean96rq"><ion-icon name="logo-linkedin"></ion-icon></a>
+                          <a target="_blank" href="https://github.com/jean96rq"><ion-icon name="logo-github"></ion-icon></a>
+                      </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Inicio</th>  
+                    </tr>
+                    <tr>
+                        <td><a href="sobreMi.html">Sobre mí</a></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Proyectos</th>  
+                    </tr>
+                    <tr>
+                        <td class="subtitulo">landing page</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blanck" href="http://patricia1.surge.sh/">landing page Desing Studio</a></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blanck" href="https://jean96rq.github.io/Web-Artistas/">landing page Artistas web</a></td>
+                    </tr>
+                    <tr>
+                        <td class="subtitulo">Javascript vanilla</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blanck" href="https://jean96rq.github.io/proyectosJS/cambiarFondo/index.html" >Background rgba aleatorio </a></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blanck" href="https://jean96rq.github.io/proyectosJS/cambiarNumeros/index.html" >Contador</a></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blanck" href="https://jean96rq.github.io/proyectosJS/modal/index.html" >Modal</a></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blanck" href="https://jean96rq.github.io/proyectosJS/cambiar-cards/index.html" >Cambiar Cards</a></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Contacto</th>  
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="mailto:jean96rq@gmail.com">jean96rq@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="tel:+51991209424">991 209 424</a></td>
+                    </tr>
+                </table>
+               
+            </div>
+            <div class="copy">
+                <hr>
+                Copyright © Jean Franco Rojas Quiroz
+            </div>
+        </footer>
+    </main>
+    
+
+    <script src="https://kit.fontawesome.com/ff3d5837fc.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="js/prueba.js"></script>
+</body>
+
+</html>
